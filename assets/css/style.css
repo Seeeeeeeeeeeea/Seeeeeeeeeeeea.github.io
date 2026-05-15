@@ -166,12 +166,25 @@ img {
   transition: var(--transition);
 }
 
-  align-items: stretch; /* Stretch children to fill width */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 
+    0 20px 40px -20px rgba(0, 0, 0, 0.15),
+    inset 0 0 30px rgba(255, 255, 255, 0.5);
+  align-items: stretch;
   justify-content: flex-start;
   overflow-y: auto;
-  scrollbar-width: none; /* Hide for Firefox */
-  -ms-overflow-style: none; /* Hide for IE/Edge */
-  gap: 2rem; /* Consistent spacing between sections */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 2rem;
 }
 
 .navbar::-webkit-scrollbar {

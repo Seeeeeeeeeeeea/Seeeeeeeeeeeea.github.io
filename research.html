@@ -84,8 +84,8 @@
 
     <main>
       <section class="page-title">
-        <h1 lang="zh-CN">科研经历</h1>
-        <h1 lang="en">Research Experience</h1>
+        <h1 lang="zh-CN">科研工作</h1>
+        <h1 lang="en">Research Work</h1>
       </section>
 
       <section class="section card">
@@ -104,29 +104,79 @@
         </div>
       </section>
 
-
       <section class="section">
         <h2 lang="zh-CN">科研项目</h2>
-        <h2 lang="en">Projects</h2>
+        <h2 lang="en">Research Projects</h2>
 
+        <!-- Project 1: FaceEditTalker -->
         <article class="entry card hover-card">
           <div class="entry-head">
             <h3 lang="zh-CN">面部属性可编辑的说话头视频生成算法研究</h3>
-            <h3 lang="en">Attribute-Editable Talking Head Generation</h3>
+            <h3 lang="en">Attribute-Editable Talking Head Video Generation</h3>
             <span class="date">2025.03 - 2025.09</span>
           </div>
-          <p class="badge" lang="zh-CN">中科院 SCI 一区在投 · 第四作者</p>
-          <p class="badge" lang="en">Under Review (CAS Tier 1) · 4th Author</p>
-          <a href="https://arxiv.org/abs/2505.22141" target="_blank" class="badge" style="background: var(--color-text); color: #fff;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px; margin-right: 4px;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-            arXiv: 2505.22141
-          </a>
-          <p class="desc" lang="zh-CN">
-            构建属性可编辑的音频驱动说话头视频生成框架。基于属性标注人脸数据训练语义潜空间线性分类器，推理时对参考人像语义潜变量进行属性方向调制。
-          </p>
-          <p class="desc" lang="en">
-            Developed an attribute-editable audio-driven talking head framework. Trained semantic latent space classifiers to modulate reference images during inference.
-          </p>
+          <div class="project-tags">
+            <span class="badge" lang="zh-CN">中科院 SCI 一区在投 · 第四作者</span>
+            <span class="badge" lang="en">Under Review (CAS Tier 1) · 4th Author</span>
+            <a href="https://arxiv.org/abs/2505.22141" target="_blank" class="badge" style="background: var(--color-text); color: #fff;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px; margin-right: 4px;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              arXiv: 2505.22141
+            </a>
+          </div>
+          
+          <div class="project-content">
+            <h4 lang="zh-CN">项目内容：</h4>
+            <h4 lang="en">Description:</h4>
+            <p class="desc" lang="zh-CN">该研究面向数字人形象个性化定制，构建属性可编辑的音频驱动说话头视频生成框架。基于属性标注人脸数据训练语义潜空间线性分类器，将其权重建模为可解释的面部属性编辑方向；推理时对参考人像语义潜变量进行属性方向调制，并作为语义引导条件参与视频去噪生成，实现身份保持、属性控制的音频驱动说话头视频生成。</p>
+            <p class="desc" lang="en">This research focuses on personalized digital human customization by building an attribute-editable audio-driven talking head video generation framework. It trains semantic latent space linear classifiers on attribute-labeled face data, modeling weights as interpretable directions for facial attribute editing. During inference, semantic latent variables of reference images are modulated along these directions to guide the denoising process, achieving identity-preserving and attribute-controlled generation.</p>
+            
+            <h4 lang="zh-CN">项目贡献：</h4>
+            <h4 lang="en">Key Contributions:</h4>
+            <p class="desc" lang="zh-CN">负责部分对比实验的实施，完成定性分析与可视化展示，组织并分析用户调研结果；主导论文撰写与投稿工作。</p>
+            <p class="desc" lang="en">Conducted comparative experiments, qualitative analysis, and visualization. Organized and analyzed user study results. Led the paper writing and submission process.</p>
+          </div>
+        </article>
+
+        <!-- Project 2: Audio-Pose Decoupled -->
+        <article class="entry card hover-card">
+          <div class="entry-head">
+            <h3 lang="zh-CN">音频-姿态解耦驱动的半身数字人视频生成算法研究</h3>
+            <h3 lang="en">Audio-Pose Decoupled Half-Body Digital Human Video Generation</h3>
+            <span class="date">2025.09 - Present</span>
+          </div>
+          
+          <div class="project-content">
+            <h4 lang="zh-CN">项目内容：</h4>
+            <h4 lang="en">Description:</h4>
+            <p class="desc" lang="zh-CN">该研究面向数字媒体内容制作中的半身数字人视频生成场景。针对音频驱动面部动态时易受关键点条件干扰，以及生成嘴部动态易受参考图像初始嘴部姿态牵制的问题，提出身份、语音动态与姿态动作的解耦控制机制。方法以参考图像建模人物身份与外观特征，以音频条件驱动口型及面部表情动态，以稀疏关键点引导头部姿态与手势运动，并通过条件丢弃以平衡多条件对生成的控制，实现可控的半身说话人视频生成。</p>
+            <p class="desc" lang="en">Targeting media production, this project addresses interference between audio-driven facial dynamics and keypoint conditions, as well as the initial mouth pose bias. It proposes a decoupling mechanism for identity, speech dynamics, and pose. The method models identity from reference images, drives expressions/mouth dynamics via audio, and guides head pose/gestures via sparse keypoints, employing condition dropout to balance multi-modal control signals.</p>
+            
+            <h4 lang="zh-CN">项目贡献：</h4>
+            <h4 lang="en">Key Contributions:</h4>
+            <p class="desc" lang="zh-CN">独立开展该项目研究，完成说话人驱动条件设计、扩散模型架构搭建及掩码音频交叉注意力核心模块实现；负责大规模头部/半身说话人视频数据的收集、清洗与预处理，搭建多阶段训练流程，并结合自定义数据增强与训练采样策略完成模型训练与调优；设计并实施对比实验与消融实验，完成实验结果分析与可视化展示。</p>
+            <p class="desc" lang="en">Independent lead researcher. Designed driving conditions, built the diffusion architecture, and implemented the masked audio cross-attention module. Managed large-scale dataset collection and preprocessing. Established multi-stage training pipelines with custom data augmentation. Designed and conducted comprehensive comparative and ablation experiments.</p>
+          </div>
+        </article>
+
+        <!-- Project 3: Huawei MindSpore -->
+        <article class="entry card hover-card">
+          <div class="entry-head">
+            <h3 lang="zh-CN">华为昇思大模型 2025 创新训练营（西北区）结营作品</h3>
+            <h3 lang="en">Huawei MindSpore LLM Innovation Camp 2025 (Northwest)</h3>
+            <span class="date">2025.09</span>
+          </div>
+          
+          <div class="project-content">
+            <h4 lang="zh-CN">项目内容：</h4>
+            <h4 lang="en">Description:</h4>
+            <p class="desc" lang="zh-CN">在华为云昇腾算力平台上，面向校园新生问答场景对 Qwen2.5-7B 模型进行微调。首先，调用 DeepSeek-V3 API 合成数据集，随后采用 LoRA 参数高效微调方法完成模型训练，最后基于 Gradio 搭建 Web 交互平台，实现从数据构建、模型微调到系统部署的完整闭环。</p>
+            <p class="desc" lang="en">Fine-tuned Qwen2.5-7B on Huawei Ascend platform for campus Q&A. Synthesized datasets via DeepSeek-V3 API, employed LoRA for efficient fine-tuning, and built a Gradio web interface. Achieved a complete pipeline from data synthesis to system deployment.</p>
+            
+            <h4 lang="zh-CN">项目贡献：</h4>
+            <h4 lang="en">Key Contributions:</h4>
+            <p class="desc" lang="zh-CN">担任主要负责人，统筹团队分工与主导项目全流程推进。</p>
+            <p class="desc" lang="en">Project Leader. Coordinated team division and led the full lifecycle of the project.</p>
+          </div>
         </article>
       </section>
     </main>

@@ -4,348 +4,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="杨佳豪的个人学术主页与简历网站。">
-  <title>杨佳豪 | 个人学术主页</title>
+  <title>杨佳豪 | 个人主页</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar container" aria-label="主导航">
-      <a class="site-brand" href="#home" aria-label="返回首页">
-        <span class="brand-mark">YJH</span>
-        <span>杨佳豪</span>
-      </a>
+  <div class="page">
+    <header class="site-header" id="home">
+      <nav class="navbar" aria-label="主导航">
+        <a class="site-brand" href="#home">杨佳豪</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">打开导航菜单</span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <ul class="nav-menu" id="primary-menu">
+          <li><a href="#about">概况</a></li>
+          <li><a href="#education">教育</a></li>
+          <li><a href="#research">研究</a></li>
+          <li><a href="#projects">经历</a></li>
+          <li><a href="#awards">获奖</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </nav>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-        <span class="sr-only">打开导航菜单</span>
-        <span class="nav-toggle-line"></span>
-        <span class="nav-toggle-line"></span>
-        <span class="nav-toggle-line"></span>
-      </button>
-
-      <ul class="nav-menu" id="primary-menu">
-        <li><a href="#about">概况</a></li>
-        <li><a href="#education">教育</a></li>
-        <li><a href="#research">科研</a></li>
-        <li><a href="#projects">项目</a></li>
-        <li><a href="#awards">获奖</a></li>
-        <li><a href="#contact">联系</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero section" id="home">
-      <div class="container hero-layout">
-        <div class="hero-content">
-          <p class="eyebrow">Personal Academic Homepage</p>
+      <section class="profile-header" aria-label="个人简介">
+        <div class="profile-text">
           <h1>杨佳豪</h1>
-          <p class="hero-summary">
-            西安电子科技大学大数据管理与应用专业本科生，研究兴趣聚焦数字人视频生成、音频驱动说话人生成与多模态生成模型。
-          </p>
-          <div class="hero-meta" aria-label="个人亮点">
-            <span>专业排名 3/42</span>
-            <span>GPA 3.9/4.0</span>
-            <span>CET-6 542</span>
-            <span>国家奖学金</span>
-          </div>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#research">查看科研经历</a>
-            <a class="button button-secondary" href="#contact">联系我</a>
-          </div>
-        </div>
-
-        <aside class="profile-panel" aria-label="个人资料卡">
-          <div class="profile-image-wrap">
-            <img src="assets/images/my_photo.png" alt="杨佳豪个人照片" class="profile-image">
-          </div>
-          <div class="profile-panel-body">
-            <p class="profile-label">Academic Profile</p>
-            <h2>杨佳豪</h2>
-            <p>西安电子科技大学本科生，当前主要围绕音频驱动数字人与可控视频生成方向开展研究。</p>
-            <dl class="profile-facts">
-              <div>
-                <dt>专业</dt>
-                <dd>大数据管理与应用</dd>
-              </div>
-              <div>
-                <dt>年级</dt>
-                <dd>2023 级</dd>
-              </div>
-              <div>
-                <dt>籍贯</dt>
-                <dd>河南省南阳市</dd>
-              </div>
-              <div>
-                <dt>政治面貌</dt>
-                <dd>共青团员</dd>
-              </div>
-            </dl>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container section-layout">
-        <div class="section-heading">
-          <p class="eyebrow">Profile</p>
-          <h2>个人概况</h2>
-        </div>
-        <div class="section-body">
+          <p class="profile-title">西安电子科技大学 大数据管理与应用专业 本科生</p>
           <p>
-            我目前就读于西安电子科技大学大数据管理与应用专业，专业排名 3/42，平均学分绩点 3.9/4.0。
-            近期科研工作主要围绕面部属性可编辑说话头视频生成、音频-姿态解耦驱动半身数字人视频生成等方向展开。
+            研究兴趣聚焦数字人视频生成、音频驱动说话人生成、多模态生成模型与大模型应用。
           </p>
-          <div class="info-grid">
-            <div>
-              <span>出生年月</span>
-              <strong>2005 年 8 月</strong>
-            </div>
-            <div>
-              <span>联系电话</span>
-              <strong>19837724626</strong>
-            </div>
-            <div>
-              <span>电子邮箱</span>
-              <strong>jhyang2369@stu.xidian.edu.cn</strong>
-            </div>
-            <div>
-              <span>英语能力</span>
-              <strong>CET-4 523 / CET-6 542</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="education">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Education</p>
-          <h2>教育背景</h2>
-        </div>
-
-        <article class="card education-card">
-          <div class="education-main">
-            <div>
-              <p class="item-kicker">2023 - 2027</p>
-              <h3>西安电子科技大学</h3>
-              <p>大数据管理与应用</p>
-            </div>
-            <div class="stat-grid" aria-label="学业指标">
-              <div>
-                <strong>3/42</strong>
-                <span>专业排名</span>
-              </div>
-              <div>
-                <strong>3.9/4.0</strong>
-                <span>平均学分绩点</span>
-              </div>
-              <div>
-                <strong>542</strong>
-                <span>CET-6</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="education-columns">
-            <div>
-              <h4>主要荣誉</h4>
-              <ul class="clean-list">
-                <li>2024-2025 国家奖学金</li>
-                <li>2024-2025 校级优秀学生标兵（Top1%）</li>
-                <li>2023-2024 国家励志奖学金</li>
-                <li>2024-2025 钱永贵科技经英奖学金</li>
-              </ul>
-            </div>
-            <div>
-              <h4>主干课程成绩</h4>
-              <div class="tag-list compact-tags" aria-label="主干课程成绩">
-                <span>数据库原理 98</span>
-                <span>大数据技术基础 96</span>
-                <span>Python 程序设计 96</span>
-                <span>计算机网络 96</span>
-                <span>数据结构 94</span>
-                <span>数据挖掘与机器学习 94</span>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="research">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>科研方向</h2>
-        </div>
-        <div class="research-grid">
-          <article class="card research-card">
-            <span class="card-index">01</span>
-            <h3>音频驱动说话头视频生成</h3>
-            <p>关注音频条件、参考人像身份保持与面部动态生成之间的协同建模。</p>
-          </article>
-          <article class="card research-card">
-            <span class="card-index">02</span>
-            <h3>音频-姿态解耦控制</h3>
-            <p>探索语音动态、头部姿态、手势动作与身份外观之间的多条件解耦控制机制。</p>
-          </article>
-          <article class="card research-card">
-            <span class="card-index">03</span>
-            <h3>多模态生成与大模型应用</h3>
-            <p>关注生成式模型在数字媒体内容制作、智能问答与交互系统中的应用落地。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>科研与项目经历</h2>
-        </div>
-
-        <div class="experience-list">
-          <article class="card experience-card">
-            <div class="experience-head">
-              <div>
-                <p class="item-kicker">2025.03 - 2025.09</p>
-                <h3>面部属性可编辑的说话头视频生成算法研究</h3>
-                <p class="item-subtitle">第四作者，中科院 SCI 一区在投</p>
-              </div>
-              <span class="pill">Talking Head</span>
-            </div>
-            <p>
-              面向数字人形象个性化定制，构建属性可编辑的音频驱动说话头视频生成框架。基于属性标注人脸数据训练语义潜空间线性分类器，
-              将其权重建模为可解释的面部属性编辑方向；推理时对参考人像语义潜变量进行属性方向调制，并作为语义引导条件参与视频去噪生成，
-              实现身份保持、属性控制的音频驱动说话头视频生成。
-            </p>
-            <div class="contribution-box">
-              <strong>个人贡献</strong>
-              <p>负责部分对比实验的实施，完成定性分析与可视化展示，组织并分析用户调研结果；主导论文撰写与投稿工作。</p>
-            </div>
-            <div class="tag-list" aria-label="项目关键词">
-              <span>音频驱动</span>
-              <span>属性编辑</span>
-              <span>身份保持</span>
-              <span>扩散生成</span>
-            </div>
-          </article>
-
-          <article class="card experience-card featured-card">
-            <div class="experience-head">
-              <div>
-                <p class="item-kicker">2025.09 至今</p>
-                <h3>音频-姿态解耦驱动的半身数字人视频生成算法研究</h3>
-                <p class="item-subtitle">独立开展项目研究</p>
-              </div>
-              <span class="pill">Digital Human</span>
-            </div>
-            <p>
-              面向数字媒体内容制作中的半身数字人视频生成场景，针对音频驱动面部动态时易受关键点条件干扰，以及生成嘴部动态易受参考图像初始嘴部姿态牵制的问题，
-              提出身份、语音动态与姿态动作的解耦控制机制。方法以参考图像建模人物身份与外观特征，以音频条件驱动口型及面部表情动态，
-              以稀疏关键点引导头部姿态与手势运动，并通过条件丢弃以平衡多条件对生成的控制，实现可控的半身说话人视频生成。
-            </p>
-            <div class="contribution-box">
-              <strong>个人贡献</strong>
-              <p>
-                完成说话人驱动条件设计、扩散模型架构搭建及掩码音频交叉注意力核心模块实现；负责大规模头部/半身说话人视频数据的收集、清洗与预处理，
-                搭建多阶段训练流程，并结合自定义数据增强与训练采样策略完成模型训练与调优；设计并实施对比实验与消融实验，完成结果分析与可视化展示。
-              </p>
-            </div>
-            <div class="tag-list" aria-label="项目关键词">
-              <span>半身数字人</span>
-              <span>音频-姿态解耦</span>
-              <span>掩码音频交叉注意力</span>
-              <span>多阶段训练</span>
-            </div>
-          </article>
-
-          <article class="card experience-card">
-            <div class="experience-head">
-              <div>
-                <p class="item-kicker">2025.09</p>
-                <h3>华为昇思大模型 2025 创新训练营（西北区）结营作品</h3>
-                <p class="item-subtitle">主要负责人</p>
-              </div>
-              <span class="pill">LLM</span>
-            </div>
-            <p>
-              在华为云昇腾算力平台上，面向校园新生问答场景对 Qwen2.5-7B 模型进行微调。调用 DeepSeek-V3 API 合成数据集，
-              采用 LoRA 参数高效微调方法完成模型训练，并基于 Gradio 搭建 Web 交互平台，实现从数据构建、模型微调到系统部署的完整闭环。
-            </p>
-            <div class="contribution-box">
-              <strong>个人贡献</strong>
-              <p>担任主要负责人，统筹团队分工并主导项目全流程推进。</p>
-            </div>
-            <div class="tag-list" aria-label="项目关键词">
-              <span>Qwen2.5-7B</span>
-              <span>LoRA 微调</span>
-              <span>DeepSeek-V3</span>
-              <span>Gradio</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="awards">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Awards</p>
-          <h2>竞赛获奖</h2>
-        </div>
-        <div class="award-grid">
-          <article class="card award-card">
-            <h3>国际大学生数学建模竞赛</h3>
-            <p>国际级二等奖</p>
-          </article>
-          <article class="card award-card">
-            <h3>全国大学生数学建模竞赛</h3>
-            <p>省级二等奖</p>
-          </article>
-          <article class="card award-card">
-            <h3>全国大学生数学竞赛</h3>
-            <p>省级二等奖</p>
-          </article>
-          <article class="card award-card">
-            <h3>正大杯全国大学生市场调研竞赛</h3>
-            <p>省级二等奖</p>
-          </article>
-          <article class="card award-card wide-card">
-            <h3>西电星火杯校赛</h3>
-            <p>一等奖，基于三维高斯泼溅高保真数字人研究及应用</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="contact">
-      <div class="container section-layout">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>联系方式</h2>
-        </div>
-        <div class="section-body">
-          <p>欢迎通过以下方式联系我，交流科研、项目合作或升学相关事宜。</p>
-          <ul class="contact-list">
-            <li><span>邮箱</span><a href="mailto:jhyang2369@stu.xidian.edu.cn">jhyang2369@stu.xidian.edu.cn</a></li>
-            <li><span>电话</span><a href="tel:19837724626">19837724626</a></li>
-            <li><span>GitHub</span><a href="https://github.com/Seeeeeeeeeeeea">github.com/Seeeeeeeeeeeea</a></li>
-            <li><span>个人主页</span><a href="https://seeeeeeeeeeea.github.io">seeeeeeeeeeea.github.io</a></li>
+          <ul class="contact-inline">
+            <li><strong>Email:</strong> <a href="mailto:jhyang2369@stu.xidian.edu.cn">jhyang2369@stu.xidian.edu.cn</a></li>
+            <li><strong>Phone:</strong> <a href="tel:19837724626">19837724626</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Seeeeeeeeeeeea">github.com/Seeeeeeeeeeeea</a></li>
           </ul>
         </div>
-      </div>
-    </section>
-  </main>
+        <figure class="profile-photo">
+          <img src="assets/images/my_photo.png" alt="杨佳豪个人照片">
+        </figure>
+      </section>
+    </header>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="current-year">2026</span> 杨佳豪. All rights reserved.</p>
-    </div>
-  </footer>
+    <main>
+      <section class="section" id="about">
+        <h2>个人概况</h2>
+        <p>
+          我目前就读于西安电子科技大学大数据管理与应用专业，专业排名 3/42，平均学分绩点 3.9/4.0。
+          近期科研工作主要围绕面部属性可编辑说话头视频生成、音频-姿态解耦驱动半身数字人视频生成等方向展开。
+        </p>
+        <dl class="info-list">
+          <div><dt>出生年月</dt><dd>2005 年 8 月</dd></div>
+          <div><dt>籍贯</dt><dd>河南省南阳市</dd></div>
+          <div><dt>政治面貌</dt><dd>共青团员</dd></div>
+          <div><dt>英语能力</dt><dd>CET-4 523 / CET-6 542</dd></div>
+        </dl>
+      </section>
+
+      <section class="section" id="education">
+        <h2>教育背景</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>西安电子科技大学</h3>
+            <span>2023 - 2027</span>
+          </div>
+          <p>大数据管理与应用</p>
+          <ul class="plain-list">
+            <li>专业排名：3/42</li>
+            <li>平均学分绩点：3.9/4.0</li>
+            <li>英语能力：CET-4（523）、CET-6（542）</li>
+          </ul>
+        </div>
+
+        <h3 class="subheading">主干课程成绩</h3>
+        <ul class="tag-list" aria-label="主干课程成绩">
+          <li>数据库原理（98）</li>
+          <li>大数据技术基础（96）</li>
+          <li>Python 程序设计（96）</li>
+          <li>计算机网络（96）</li>
+          <li>数据结构（94）</li>
+          <li>数据挖掘与机器学习（94）</li>
+        </ul>
+      </section>
+
+      <section class="section" id="research">
+        <h2>研究兴趣</h2>
+        <ul class="research-list">
+          <li>
+            <strong>音频驱动说话头视频生成：</strong>
+            关注音频条件、参考人像身份保持与面部动态生成之间的协同建模。
+          </li>
+          <li>
+            <strong>音频-姿态解耦控制：</strong>
+            探索语音动态、头部姿态、手势动作与身份外观之间的多条件解耦控制机制。
+          </li>
+          <li>
+            <strong>多模态生成与大模型应用：</strong>
+            关注生成式模型在数字媒体内容制作、智能问答与交互系统中的应用落地。
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>科研与项目经历</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>面部属性可编辑的说话头视频生成算法研究</h3>
+            <span>2025.03 - 2025.09</span>
+          </div>
+          <p class="muted">第四作者，中科院 SCI 一区在投</p>
+          <p>
+            该研究面向数字人形象个性化定制，构建属性可编辑的音频驱动说话头视频生成框架。基于属性标注人脸数据训练语义潜空间线性分类器，
+            将其权重建模为可解释的面部属性编辑方向；推理时对参考人像语义潜变量进行属性方向调制，并作为语义引导条件参与视频去噪生成。
+          </p>
+          <p>
+            <strong>个人贡献：</strong>
+            负责部分对比实验的实施，完成定性分析与可视化展示，组织并分析用户调研结果；主导论文撰写与投稿工作。
+          </p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>音频-姿态解耦驱动的半身数字人视频生成算法研究</h3>
+            <span>2025.09 至今</span>
+          </div>
+          <p>
+            该研究面向数字媒体内容制作中的半身数字人视频生成场景，针对音频驱动面部动态时易受关键点条件干扰，以及生成嘴部动态易受参考图像初始嘴部姿态牵制的问题，
+            提出身份、语音动态与姿态动作的解耦控制机制。方法以参考图像建模人物身份与外观特征，以音频条件驱动口型及面部表情动态，
+            以稀疏关键点引导头部姿态与手势运动，并通过条件丢弃以平衡多条件对生成的控制。
+          </p>
+          <p>
+            <strong>个人贡献：</strong>
+            独立开展该项目研究，完成说话人驱动条件设计、扩散模型架构搭建及掩码音频交叉注意力核心模块实现；
+            负责大规模头部/半身说话人视频数据的收集、清洗与预处理，搭建多阶段训练流程，并完成模型训练、调优、对比实验与消融实验。
+          </p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>华为昇思大模型 2025 创新训练营（西北区）结营作品</h3>
+            <span>2025.09</span>
+          </div>
+          <p>
+            在华为云昇腾算力平台上，面向校园新生问答场景对 Qwen2.5-7B 模型进行微调。调用 DeepSeek-V3 API 合成数据集，
+            采用 LoRA 参数高效微调方法完成模型训练，并基于 Gradio 搭建 Web 交互平台，实现从数据构建、模型微调到系统部署的完整闭环。
+          </p>
+          <p><strong>个人贡献：</strong>担任主要负责人，统筹团队分工并主导项目全流程推进。</p>
+        </article>
+      </section>
+
+      <section class="section" id="awards">
+        <h2>荣誉与竞赛获奖</h2>
+
+        <h3 class="subheading">主要荣誉</h3>
+        <ul class="plain-list columns">
+          <li>2024-2025 国家奖学金</li>
+          <li>2024-2025 校级优秀学生标兵（Top1%）</li>
+          <li>2023-2024 国家励志奖学金</li>
+          <li>2024-2025 钱永贵科技经英奖学金</li>
+        </ul>
+
+        <h3 class="subheading">竞赛获奖</h3>
+        <ul class="plain-list">
+          <li>国际大学生数学建模竞赛国际级二等奖</li>
+          <li>全国大学生数学建模竞赛省级二等奖</li>
+          <li>全国大学生数学竞赛省级二等奖</li>
+          <li>正大杯全国大学生市场调研竞赛省级二等奖</li>
+          <li>西电星火杯校赛一等奖（基于三维高斯泼溅高保真数字人研究及应用）</li>
+        </ul>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>联系方式</h2>
+        <p>欢迎通过以下方式联系我，交流科研、项目合作或升学相关事宜。</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:jhyang2369@stu.xidian.edu.cn">jhyang2369@stu.xidian.edu.cn</a></li>
+          <li><strong>Phone:</strong> <a href="tel:19837724626">19837724626</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Seeeeeeeeeeeea">github.com/Seeeeeeeeeeeea</a></li>
+          <li><strong>Homepage:</strong> <a href="https://seeeeeeeeeeea.github.io">seeeeeeeeeeea.github.io</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="current-year">2026</span> 杨佳豪</p>
+    </footer>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>

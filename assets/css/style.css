@@ -317,18 +317,24 @@ img {
 }
 
 .metric-list {
-  display: block;
+  display: grid;
+  gap: 0.25rem;
   margin: 0;
-  padding-left: 1.1rem;
+  padding: 0;
 }
 
-.metric-list li {
-  display: list-item;
-  margin: 0 0 0.25rem;
+.metric-list div {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 0.75rem;
 }
 
-.metric-list li:last-child {
-  margin-bottom: 0;
+.metric-list dt {
+  color: var(--color-muted);
+}
+
+.metric-list dd {
+  margin: 0;
 }
 
 .research-list {
@@ -460,6 +466,10 @@ img {
 
   .compact-info div {
     grid-template-columns: 4.5rem 1fr;
+  }
+
+  .metric-list div {
+    grid-template-columns: 5.5rem 1fr;
   }
 
   .entry-head {

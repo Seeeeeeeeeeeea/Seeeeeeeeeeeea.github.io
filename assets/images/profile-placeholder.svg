@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="desc">A calm academic-style placeholder image for a personal homepage.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef6fb"/>
+      <stop offset="0.48" stop-color="#dbeaf3"/>
+      <stop offset="1" stop-color="#f8fbfe"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6f9f"/>
+      <stop offset="1" stop-color="#297c7f"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" fill="url(#bg)"/>
+  <path d="M0 410h720v110H0z" fill="#ffffff" opacity=".55"/>
+  <path d="M90 120h540" stroke="#c4d6e5" stroke-width="2"/>
+  <path d="M90 175h330" stroke="#c4d6e5" stroke-width="2"/>
+  <path d="M90 230h470" stroke="#c4d6e5" stroke-width="2"/>
+  <rect x="185" y="92" width="350" height="350" rx="8" fill="#ffffff" opacity=".72"/>
+  <circle cx="360" cy="219" r="72" fill="url(#panel)"/>
+  <path d="M230 410c21-70 73-112 130-112s109 42 130 112" fill="url(#panel)" opacity=".92"/>
+  <path d="M520 78l52 22-52 22-52-22z" fill="#0f172a" opacity=".9"/>
+  <path d="M572 100v58" stroke="#0f172a" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+  <circle cx="572" cy="164" r="12" fill="#297c7f"/>
+</svg>

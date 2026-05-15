@@ -60,6 +60,8 @@ Update these placeholders before publishing your final resume homepage:
 
 - `index.html`: site name, page title, hero name, short introduction, about text.
 - `index.html`: research interests, project cards, skill categories, contact links.
+- `assets/images/my_photo.png`: replace this profile image with your own final photo if needed.
+- `assets/images/profile-placeholder.svg`: backup placeholder image.
 - `assets/images/`: add profile photos, project images, or other static assets if needed.
 - `assets/css/style.css`: adjust colors, spacing, typography, or layout details.
 - `README.md`: replace this template text with project-specific notes if desired.

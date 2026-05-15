@@ -10,7 +10,10 @@
 <body>
   <header class="site-header">
     <nav class="navbar container" aria-label="Main navigation">
-      <a class="site-brand" href="#home" aria-label="Back to home">Your Name</a>
+      <a class="site-brand" href="#home" aria-label="Back to home">
+        <span class="brand-mark">YN</span>
+        <span>Your Name</span>
+      </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
         <span class="sr-only">Toggle navigation</span>
@@ -36,11 +39,36 @@
           <p class="eyebrow">Personal Academic Homepage</p>
           <h1>Your Name</h1>
           <p class="hero-summary">A short one-sentence introduction about your research interests and academic goals.</p>
+          <div class="hero-meta" aria-label="Profile highlights">
+            <span>Research Area</span>
+            <span>Institution</span>
+            <span>Location</span>
+          </div>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">View Projects</a>
             <a class="button button-secondary" href="#contact">Contact Me</a>
           </div>
         </div>
+        <aside class="profile-panel" aria-label="Profile summary card">
+          <div class="profile-image-wrap">
+            <img src="assets/images/my_photo.png" alt="Profile photo" class="profile-image">
+          </div>
+          <div class="profile-panel-body">
+            <p class="profile-label">Academic Profile</p>
+            <h2>Your Name</h2>
+            <p>Short academic identity placeholder, such as undergraduate student, research assistant, or applicant.</p>
+            <dl class="profile-facts">
+              <div>
+                <dt>Focus</dt>
+                <dd>Research Direction</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Open to Opportunities</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -71,14 +99,17 @@
         </div>
         <div class="research-grid">
           <article class="card research-card">
+            <span class="card-index">01</span>
             <h3>Research Interest 1</h3>
             <p>Brief placeholder description for this research direction.</p>
           </article>
           <article class="card research-card">
+            <span class="card-index">02</span>
             <h3>Research Interest 2</h3>
             <p>Brief placeholder description for this research direction.</p>
           </article>
           <article class="card research-card">
+            <span class="card-index">03</span>
             <h3>Research Interest 3</h3>
             <p>Brief placeholder description for this research direction.</p>
           </article>

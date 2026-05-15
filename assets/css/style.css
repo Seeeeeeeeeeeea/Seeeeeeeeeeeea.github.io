@@ -220,6 +220,7 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   align-items: stretch;
+  margin-bottom: 1.5rem;
 }
 
 .grid-layout .card {

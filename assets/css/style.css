@@ -10,7 +10,7 @@
   --color-accent: #3b82f6;
   --color-accent-light: #eff6ff;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-  --container-width: 980px;
+  --container-width: 1400px;
   --radius: 16px;
   --radius-sm: 8px;
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
@@ -66,10 +66,10 @@ img {
 }
 
 .page {
-  margin-left: 300px;
-  width: calc(100% - 320px);
+  margin-left: 280px;
+  width: calc(100% - 310px);
   max-width: var(--container-width);
-  padding: 1.5rem 1rem 3rem;
+  padding: 2rem 2.5rem 4rem;
 }
 
 .sr-only {
@@ -186,9 +186,9 @@ img {
 /* Profile Section */
 .profile-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .profile-title {
@@ -255,7 +255,7 @@ img {
 /* Grids & Layouts */
 .grid-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 1.5rem;
   align-items: stretch;
   margin-bottom: 1.5rem;

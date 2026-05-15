@@ -170,8 +170,8 @@ img {
 
 .profile-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 190px;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 132px;
+  gap: 1.5rem;
   align-items: start;
   padding-bottom: 1.7rem;
 }
@@ -402,7 +402,7 @@ img {
   }
 
   .profile-photo {
-    width: 180px;
+    width: 128px;
   }
 
   h1 {

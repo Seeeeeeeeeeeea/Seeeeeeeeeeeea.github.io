@@ -14,7 +14,7 @@
   --color-border-strong: #b8c8d9;
   --color-shadow: rgba(15, 23, 42, 0.1);
 
-  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-sans: "Inter", "Segoe UI", "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif;
   --font-size-base: 16px;
   --font-size-small: 0.92rem;
   --font-size-h1: 3.75rem;
@@ -72,13 +72,15 @@ img {
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--color-heading);
   line-height: 1.15;
 }
@@ -99,6 +101,12 @@ h2 {
 h3 {
   margin-bottom: var(--space-sm);
   font-size: var(--font-size-h3);
+  letter-spacing: 0;
+}
+
+h4 {
+  margin-bottom: var(--space-sm);
+  font-size: 0.96rem;
   letter-spacing: 0;
 }
 
@@ -460,9 +468,132 @@ ul {
   pointer-events: none;
 }
 
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.info-grid div {
+  padding: var(--space-md);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.info-grid span {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.info-grid strong {
+  color: var(--color-heading);
+  font-size: 0.98rem;
+}
+
+.item-kicker {
+  margin-bottom: 0.35rem;
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.item-subtitle {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.education-card {
+  padding: var(--space-xl);
+}
+
+.education-main {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  gap: var(--space-xl);
+  align-items: center;
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.education-main h3 {
+  margin-bottom: 0.35rem;
+  font-size: 1.45rem;
+}
+
+.education-main p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.stat-grid div {
+  padding: var(--space-md);
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.stat-grid strong {
+  display: block;
+  color: var(--color-heading);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.stat-grid span {
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.education-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: var(--space-xl);
+  padding-top: var(--space-xl);
+}
+
+.clean-list {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--color-text-muted);
+  list-style: none;
+}
+
+.clean-list li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.clean-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.72rem;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--color-teal);
+  border-radius: 999px;
+}
+
 .research-grid,
 .project-grid,
-.skills-grid {
+.skills-grid,
+.award-grid {
   display: grid;
   gap: var(--space-lg);
 }
@@ -476,6 +607,10 @@ ul {
 }
 
 .skills-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.award-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
@@ -554,6 +689,102 @@ ul {
   color: var(--color-accent-dark);
   font-size: 0.78rem;
   font-weight: 800;
+}
+
+.compact-tags {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.compact-tags span {
+  font-size: 0.82rem;
+}
+
+.experience-list {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.experience-card {
+  padding: var(--space-xl);
+}
+
+.experience-card p {
+  color: var(--color-text-muted);
+}
+
+.experience-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.experience-head h3 {
+  max-width: 760px;
+  margin-bottom: 0.4rem;
+  font-size: 1.28rem;
+}
+
+.pill {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 0.68rem;
+  background: var(--color-heading);
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.featured-card {
+  border-color: rgba(47, 111, 159, 0.42);
+}
+
+.contribution-box {
+  margin: var(--space-lg) 0;
+  padding: var(--space-md);
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.contribution-box strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--color-heading);
+}
+
+.contribution-box p {
+  margin-bottom: 0;
+}
+
+.experience-card .tag-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.award-card {
+  min-height: 150px;
+  padding: var(--space-lg);
+}
+
+.award-card h3 {
+  margin-bottom: var(--space-md);
+}
+
+.award-card p {
+  margin-bottom: 0;
+  color: var(--color-accent-dark);
+  font-weight: 800;
+}
+
+.wide-card {
+  grid-column: span 2;
 }
 
 .text-link {
@@ -652,12 +883,22 @@ ul {
   .section-layout,
   .research-grid,
   .project-grid,
-  .skills-grid {
+  .skills-grid,
+  .award-grid {
     grid-template-columns: 1fr 1fr;
   }
 
   .section-layout {
     gap: var(--space-xl);
+  }
+
+  .education-main,
+  .education-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -732,7 +973,10 @@ ul {
   .section-layout,
   .research-grid,
   .project-grid,
-  .skills-grid {
+  .skills-grid,
+  .award-grid,
+  .info-grid,
+  .stat-grid {
     grid-template-columns: 1fr;
   }
 
@@ -752,6 +996,19 @@ ul {
     min-height: auto;
   }
 
+  .education-card,
+  .experience-card {
+    padding: var(--space-lg);
+  }
+
+  .experience-head {
+    display: block;
+  }
+
+  .pill {
+    margin-top: var(--space-sm);
+  }
+
   .project-meta {
     display: block;
   }
@@ -764,5 +1021,9 @@ ul {
   .contact-list li {
     grid-template-columns: 1fr;
     gap: 0.15rem;
+  }
+
+  .wide-card {
+    grid-column: auto;
   }
 }

@@ -1,74 +1,68 @@
-# Personal Homepage
+# 杨佳豪个人主页
 
-This repository contains a static personal academic homepage for GitHub Pages.
-It uses plain HTML, CSS, and a small amount of vanilla JavaScript. No build
-tool, framework, or package installation is required.
+这是一个用于 GitHub Pages 部署的静态个人学术主页，内容包括个人概况、教育背景、科研方向、科研与项目经历、竞赛获奖和联系方式。
 
-## Directory Structure
+项目使用纯 HTML、CSS 和少量原生 JavaScript，不依赖 React、Vue、Vite、Tailwind、Bootstrap 或 npm 构建流程。
+
+## 目录结构
 
 ```text
 .
-├── index.html
-├── README.md
-├── assets
-│   ├── css
-│   │   └── style.css
-│   ├── js
-│   │   └── main.js
-│   └── images
-│       └── .gitkeep
+|-- index.html
+|-- README.md
+`-- assets
+    |-- css
+    |   `-- style.css
+    |-- js
+    |   `-- main.js
+    `-- images
+        |-- .gitkeep
+        |-- my_photo.png
+        `-- profile-placeholder.svg
 ```
 
-## Local Preview
+## 本地预览
 
-You can open `index.html` directly in a browser.
+可以直接用浏览器打开 `index.html`。
 
-For a closer GitHub Pages-like preview, run a simple local server from the
-repository root:
+也可以在项目根目录启动一个简单静态服务器：
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit:
+然后访问：
 
 ```text
 http://localhost:8000
 ```
 
-## Deploy to GitHub Pages
+## GitHub Pages 部署
 
-1. Create a GitHub repository named `seeeeeeeeeeea.github.io`.
-2. Commit and push this project to the `main` branch.
-3. Open the repository on GitHub.
-4. Go to `Settings` -> `Pages`.
-5. Under `Build and deployment`, select:
+1. 仓库名使用 `Seeeeeeeeeeeea.github.io`。
+2. 将代码推送到 `main` 分支。
+3. 进入 GitHub 仓库的 `Settings` -> `Pages`。
+4. 在 `Build and deployment` 中选择：
    - Source: `Deploy from a branch`
    - Branch: `main`
    - Folder: `/root`
-6. Save the settings and wait for GitHub Pages to publish the site.
+5. 保存后等待 GitHub Pages 自动部署。
 
-After deployment, the site should be available at:
+部署后访问：
 
 ```text
 https://seeeeeeeeeeea.github.io
 ```
 
-## Content to Update Later
+## 后续可修改位置
 
-Update these placeholders before publishing your final resume homepage:
+- `index.html`：修改个人简介、教育背景、科研经历、竞赛获奖和联系方式。
+- `assets/images/my_photo.png`：替换个人照片。
+- `assets/css/style.css`：调整颜色、字体、间距、卡片和响应式布局。
+- `assets/js/main.js`：移动端导航菜单和平滑滚动逻辑。
 
-- `index.html`: site name, page title, hero name, short introduction, about text.
-- `index.html`: research interests, project cards, skill categories, contact links.
-- `assets/images/my_photo.png`: replace this profile image with your own final photo if needed.
-- `assets/images/profile-placeholder.svg`: backup placeholder image.
-- `assets/images/`: add profile photos, project images, or other static assets if needed.
-- `assets/css/style.css`: adjust colors, spacing, typography, or layout details.
-- `README.md`: replace this template text with project-specific notes if desired.
+## 说明
 
-## Notes
-
-- The site is fully static and can be deployed directly by GitHub Pages.
-- The mobile navigation menu is implemented in `assets/js/main.js`.
-- Global colors, spacing, typography, border radius, and shadows are managed with
-  CSS variables in `assets/css/style.css`.
+- 当前页面可以直接由 GitHub Pages 部署。
+- 所有样式变量集中在 `assets/css/style.css` 的 `:root` 中，方便后续统一调整。
+- 页面没有构建步骤，也不需要执行 `npm install`。

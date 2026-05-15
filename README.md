@@ -1,6 +1,6 @@
 # 杨佳豪个人主页
 
-这是一个用于 GitHub Pages 部署的静态个人学术主页，内容包括个人概况、教育背景、科研方向、科研与项目经历、竞赛获奖和联系方式。
+这是一个用于 GitHub Pages 部署的静态个人学术主页，包含个人简历、科研经历和科研历程三个页面。
 
 项目使用纯 HTML、CSS 和少量原生 JavaScript，不依赖 React、Vue、Vite、Tailwind、Bootstrap 或 npm 构建流程。
 
@@ -9,6 +9,8 @@
 ```text
 .
 |-- index.html
+|-- research.html
+|-- journey.html
 |-- README.md
 `-- assets
     |-- css
@@ -56,7 +58,9 @@ https://seeeeeeeeeeea.github.io
 
 ## 后续可修改位置
 
-- `index.html`：修改个人简介、教育背景、科研经历、竞赛获奖和联系方式。
+- `index.html`：修改简洁版个人简历内容。
+- `research.html`：修改科研经历、研究方向和项目细节。
+- `journey.html`：修改科研时间线与阶段性积累。
 - `assets/images/my_photo.png`：替换个人照片。
 - `assets/css/style.css`：调整颜色、字体、间距、卡片和响应式布局。
 - `assets/js/main.js`：移动端导航菜单和平滑滚动逻辑。

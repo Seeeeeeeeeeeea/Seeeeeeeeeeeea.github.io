@@ -46,3 +46,34 @@ navLinks.forEach((link) => {
 if (currentYear) {
   currentYear.textContent = new Date().getFullYear();
 }
+
+// Language Switch Logic
+const langToggle = document.querySelector(".lang-toggle");
+const langOptions = document.querySelectorAll(".lang-option");
+
+function setLanguage(lang) {
+  if (lang === "en") {
+    document.body.classList.add("lang-en");
+  } else {
+    document.body.classList.remove("lang-en");
+  }
+
+  langOptions.forEach((opt) => {
+    opt.classList.toggle("active", opt.dataset.lang === lang);
+  });
+
+  localStorage.setItem("preferred-lang", lang);
+}
+
+if (langToggle) {
+  langToggle.addEventListener("click", (e) => {
+    const option = e.target.closest(".lang-option");
+    if (option) {
+      setLanguage(option.dataset.lang);
+    }
+  });
+
+  // Initialize language
+  const savedLang = localStorage.getItem("preferred-lang") || "zh-CN";
+  setLanguage(savedLang);
+}

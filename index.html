@@ -20,8 +20,14 @@
           <div class="sidebar-photo">
             <img src="assets/images/my_photo.png" alt="杨佳豪 (Jiahao Yang)">
           </div>
-          <h2 class="sidebar-name">杨佳豪</h2>
-          <div class="sidebar-title">西安电子科技大学<br>大数据管理与应用</div>
+          <h2 class="sidebar-name">
+            <span lang="zh-CN">杨佳豪</span>
+            <span lang="en">Jiahao Yang</span>
+          </h2>
+          <div class="sidebar-title">
+            <span lang="zh-CN">西安电子科技大学<br>大数据管理与应用</span>
+            <span lang="en">Xidian University<br>Big Data Management</span>
+          </div>
           
           <ul class="sidebar-contact">
             <li>
@@ -37,10 +43,17 @@
               <span>198-3772-4626</span>
             </li>
           </ul>
+
+          <div class="lang-toggle-wrapper">
+            <div class="lang-toggle">
+              <div class="lang-option active" data-lang="zh-CN">中</div>
+              <div class="lang-option" data-lang="en">EN</div>
+            </div>
+          </div>
         </div>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-          <span class="sr-only">打开导航菜单</span>
+          <span class="sr-only">Toggle menu</span>
           <span class="nav-toggle-line"></span>
           <span class="nav-toggle-line"></span>
           <span class="nav-toggle-line"></span>
@@ -50,19 +63,19 @@
           <li>
             <a href="index.html" aria-current="page">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-              主页
+              <span lang="zh-CN">主页</span><span lang="en">Home</span>
             </a>
           </li>
           <li>
             <a href="research.html">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-              科研工作
+              <span lang="zh-CN">科研工作</span><span lang="en">Research</span>
             </a>
           </li>
           <li>
             <a href="journey.html">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-              科研历程
+              <span lang="zh-CN">科研历程</span><span lang="en">Journey</span>
             </a>
           </li>
         </ul>
@@ -70,74 +83,133 @@
     </header>
 
     <main>
-      <div class="grid-layout">
-        <!-- Biography Section -->
-        <section class="card">
-          <h2>个人简介 (Biography)</h2>
-          <p>我是杨佳豪，20 岁，河南南阳人。现为西安电子科技大学 2023 级本科生。自 2025 年 5 月起，我在苗启广教授课题组进行科研实习，指导老师为李宇楠老师和冯冠文博士。研究方向主要集中在<strong>基于扩散模型的数字人生成</strong>。</p>
-        </section>
-
-        <!-- Academic Performance Section -->
-        <section class="card">
-          <h2>学业成绩 (Academic)</h2>
-          <dl class="metric-list">
-            <div>
-              <dt>绩点排名</dt>
-              <dd>3 / 42</dd>
-            </div>
-            <div>
-              <dt>GPA</dt>
-              <dd>3.9 / 4.0</dd>
-            </div>
-            <div>
-              <dt>CET-6</dt>
-              <dd>542</dd>
-            </div>
-          </dl>
-          <div style="margin-top: 1.25rem; font-size: 0.95rem; color: var(--color-muted);">
-            英语四级 (CET-4) 523 分，具备良好的学术英语阅读与写作能力。
-          </div>
-        </section>
-      </div>
-
-      <!-- Course List Section -->
+      <!-- Statement / Intro -->
       <section class="card">
-        <h2>主干课程 (Core Courses)</h2>
-        <ul class="highlight-tags course-layout">
-          <li><span>数据库原理</span> <span class="score">98</span></li>
-          <li><span>大数据技术基础</span> <span class="score">96</span></li>
-          <li><span>Python 程序设计</span> <span class="score">96</span></li>
-          <li><span>计算机网络</span> <span class="score">96</span></li>
-          <li><span>Java 程序设计</span> <span class="score">95</span></li>
-          <li><span>数据结构</span> <span class="score">94</span></li>
-          <li><span>数据挖掘与机器学习</span> <span class="score">94</span></li>
-          <li><span>离散数学基础</span> <span class="score">93</span></li>
-        </ul>
+        <h2 lang="zh-CN">个人陈述 (Personal Statement)</h2>
+        <h2 lang="en">Personal Statement</h2>
+        
+        <div lang="zh-CN">
+          <p>我是杨佳豪，20 岁，河南南阳人，共青团员，现为西安电子科技大学 2023 级大数据管理与应用专业本科生。</p>
+          <p>我致力于探索大数据的力量，并对生成式 AI，特别是扩散模型在数字人领域的应用充满热情。在学术追求中，我始终保持着严谨的态度和对前沿技术的渴求。</p>
+        </div>
+        <div lang="en">
+          <p>I am Jiahao Yang, a 20-year-old student from Nanyang, Henan, and a proud member of the Communist Youth League. I am currently an undergraduate student in the Class of 2023, majoring in Big Data Management and Application at Xidian University.</p>
+          <p>I am dedicated to exploring the power of big data and have a strong passion for Generative AI, particularly the application of diffusion models in the field of digital humans. In my academic pursuits, I maintain a rigorous attitude and a constant thirst for cutting-edge technology.</p>
+        </div>
+      </section>
+
+      <!-- Academic Performance -->
+      <section class="card">
+        <h2 lang="zh-CN">学业成绩 (Academic Performance)</h2>
+        <h2 lang="en">Academic Performance</h2>
+
+        <div lang="zh-CN">
+          <p>在本科前五学期中，我的绩点排名为 <strong>3/42</strong>，GPA 为 <strong>3.90</strong>。英语水平优秀，四级 523 分，六级 542 分。</p>
+        </div>
+        <div lang="en">
+          <p>During my first five semesters, I ranked <strong>3rd out of 42</strong> students in my major, with a GPA of <strong>3.90</strong>. I have demonstrated strong English proficiency with scores of 523 in CET-4 and 542 in CET-6.</p>
+        </div>
+
+        <dl class="metric-list">
+          <div><dt lang="zh-CN">绩点排名</dt><dt lang="en">Ranking</dt><dd>3 / 42</dd></div>
+          <div><dt lang="zh-CN">GPA</dt><dt lang="en">GPA</dt><dd>3.90 / 4.0</dd></div>
+          <div><dt lang="zh-CN">CET-6</dt><dt lang="en">CET-6</dt><dd>542</dd></div>
+        </dl>
       </section>
 
       <div class="grid-layout">
-        <!-- Research Brief Section -->
+        <!-- Honors -->
         <section class="card">
-          <h2>科研方向 (Research)</h2>
-          <p>专注于<strong>数字人生成</strong>与<strong>多模态大模型</strong>。目前正在探索音频驱动的面部属性可编辑视频生成，以及解耦控制的半身数字人生成算法。</p>
-          <a href="research.html" class="badge">查看科研项目 →</a>
+          <h2 lang="zh-CN">荣誉奖励</h2>
+          <h2 lang="en">Honors & Awards</h2>
+          <ul class="icon-list">
+            <li>
+              <span lang="zh-CN">2024-2025 学年国家奖学金</span>
+              <span lang="en">National Scholarship (2024-2025)</span>
+            </li>
+            <li>
+              <span lang="zh-CN">2024-2025 学年校级优秀学生标兵 (Top 1%)</span>
+              <span lang="en">Outstanding Student Exemplar (Top 1%, 2024-2025)</span>
+            </li>
+            <li>
+              <span lang="zh-CN">2024-2025 学年钱永贵科技精英奖学金</span>
+              <span lang="en">Qian Yonggui Science & Tech Elite Scholarship</span>
+            </li>
+            <li>
+              <span lang="zh-CN">2023-2024 学年国家励志奖学金</span>
+              <span lang="en">National Encouragement Scholarship (2023-2024)</span>
+            </li>
+          </ul>
         </section>
 
-        <!-- Honors Section -->
+        <!-- Courses -->
         <section class="card">
-          <h2>荣誉奖项 (Honors)</h2>
-          <ul class="icon-list">
-            <li>国家奖学金 (2024-2025)</li>
-            <li>校级优秀学生标兵 (Top 1%)</li>
-            <li>钱永贵科技经英奖学金</li>
-            <li>数学建模国际二等奖</li>
+          <h2 lang="zh-CN">主干课程</h2>
+          <h2 lang="en">Core Courses</h2>
+          <ul class="highlight-tags" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+            <li><span lang="zh-CN">数据库原理</span><span lang="en">Database</span> <span class="score">98</span></li>
+            <li><span lang="zh-CN">大数据技术基础</span><span lang="en">Big Data</span> <span class="score">96</span></li>
+            <li><span lang="zh-CN">Python 程序设计</span><span lang="en">Python</span> <span class="score">96</span></li>
+            <li><span lang="zh-CN">计算机网络</span><span lang="en">Networking</span> <span class="score">96</span></li>
+            <li><span lang="zh-CN">Java 程序设计</span><span lang="en">Java</span> <span class="score">95</span></li>
+            <li><span lang="zh-CN">数据结构</span><span lang="en">Data Structures</span> <span class="score">94</span></li>
+            <li><span lang="zh-CN">机器学习</span><span lang="en">Machine Learning</span> <span class="score">94</span></li>
+            <li><span lang="zh-CN">离散数学</span><span lang="en">Discrete Math</span> <span class="score">93</span></li>
           </ul>
         </section>
       </div>
+
+      <!-- Research -->
+      <section class="card">
+        <h2 lang="zh-CN">科研经历</h2>
+        <h2 lang="en">Research Experience</h2>
+        <div lang="zh-CN">
+          <p>自 2025 年 5 月起，我在西安电子科技大学计算机科学与技术学院苗启广教授课题组进行科研实习，指导老师为李宇楠老师和冯冠文博士。我的研究方向是<strong>基于扩散模型的数字人生成</strong>。</p>
+          <a href="research.html" class="badge">更多科研项目信息 →</a>
+        </div>
+        <div lang="en">
+          <p>Since May 2025, I have been conducting research as an intern in Professor Qiguang Miao's research group at the School of Computer Science and Technology, Xidian University. Under the guidance of Mr. Yunan Li and Dr. Guanwen Feng, my research focuses on <strong>digital human generation based on diffusion models</strong>.</p>
+          <a href="research.html" class="badge">More Research Projects →</a>
+        </div>
+      </section>
+
+      <!-- Competitions -->
+      <section class="card">
+        <h2 lang="zh-CN">竞赛获奖</h2>
+        <h2 lang="en">Competitions</h2>
+        <div lang="zh-CN">
+          <p>本科阶段，我参加了数学建模、数学竞赛、市场调研和科技创新类竞赛，并获得以下奖项：</p>
+        </div>
+        <div lang="en">
+          <p>During my undergraduate studies, I participated in various competitions including mathematical modeling, mathematics, market research, and technological innovation.</p>
+        </div>
+        <ul class="icon-list">
+          <li>
+            <span lang="zh-CN">国际大学生数学建模竞赛 国际级二等奖</span>
+            <span lang="en">MCM/ICM - International Second Prize (Honorable Mention)</span>
+          </li>
+          <li>
+            <span lang="zh-CN">全国大学生数学建模竞赛 省级二等奖</span>
+            <span lang="en">National Mathematical Modeling Contest - Provincial Second Prize</span>
+          </li>
+          <li>
+            <span lang="zh-CN">全国大学生数学竞赛 省级二等奖</span>
+            <span lang="en">National Mathematics Competition - Provincial Second Prize</span>
+          </li>
+          <li>
+            <span lang="zh-CN">正大杯市场调研竞赛 省级二等奖</span>
+            <span lang="en">"Zhengda Cup" Market Research Competition - Provincial Second Prize</span>
+          </li>
+          <li>
+            <span lang="zh-CN">星火杯校级一等奖 (基于三维高斯泼溅高保真数字人)</span>
+            <span lang="en">"Spark Cup" First Prize (High-fidelity Digital Human based on 3DGS)</span>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="current-year">2026</span> 杨佳豪 (Jiahao Yang) · 西安电子科技大学</p>
+      <p>&copy; <span id="current-year">2026</span> <span lang="zh-CN">杨佳豪</span><span lang="en">Jiahao Yang</span> · Xidian University</p>
     </footer>
   </div>
 

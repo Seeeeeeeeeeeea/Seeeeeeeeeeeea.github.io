@@ -20,8 +20,14 @@
           <div class="sidebar-photo">
             <img src="assets/images/my_photo.png" alt="杨佳豪 (Jiahao Yang)">
           </div>
-          <h2 class="sidebar-name">杨佳豪</h2>
-          <div class="sidebar-title">西安电子科技大学<br>大数据管理与应用</div>
+          <h2 class="sidebar-name">
+            <span lang="zh-CN">杨佳豪</span>
+            <span lang="en">Jiahao Yang</span>
+          </h2>
+          <div class="sidebar-title">
+            <span lang="zh-CN">西安电子科技大学<br>大数据管理与应用</span>
+            <span lang="en">Xidian University<br>Big Data Management</span>
+          </div>
           
           <ul class="sidebar-contact">
             <li>
@@ -37,10 +43,17 @@
               <span>198-3772-4626</span>
             </li>
           </ul>
+
+          <div class="lang-toggle-wrapper">
+            <div class="lang-toggle">
+              <div class="lang-option active" data-lang="zh-CN">中</div>
+              <div class="lang-option" data-lang="en">EN</div>
+            </div>
+          </div>
         </div>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-          <span class="sr-only">打开导航菜单</span>
+          <span class="sr-only">Toggle menu</span>
           <span class="nav-toggle-line"></span>
           <span class="nav-toggle-line"></span>
           <span class="nav-toggle-line"></span>
@@ -50,19 +63,19 @@
           <li>
             <a href="index.html">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-              主页
+              <span lang="zh-CN">主页</span><span lang="en">Home</span>
             </a>
           </li>
           <li>
             <a href="research.html">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-              科研工作
+              <span lang="zh-CN">科研工作</span><span lang="en">Research</span>
             </a>
           </li>
           <li>
             <a href="journey.html" aria-current="page">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-              科研历程
+              <span lang="zh-CN">科研历程</span><span lang="en">Journey</span>
             </a>
           </li>
         </ul>
@@ -71,80 +84,34 @@
 
     <main>
       <section class="page-title">
-        <h1>科研历程</h1>
-        <p>记录研究训练的足迹、关键节点的里程碑以及在这一过程中的思考与成长。</p>
+        <h1 lang="zh-CN">科研历程</h1>
+        <h1 lang="en">Research Journey</h1>
+        <p lang="zh-CN">记录研究训练的足迹、关键节点的里程碑以及在这一过程中的思考与成长。</p>
+        <p lang="en">Recording the footprints of research training, milestones of key nodes, and reflection/growth along the way.</p>
       </section>
 
       <div class="journey-container">
         <section class="timeline-section">
-          <h2 style="margin-bottom: 2rem;">里程碑</h2>
+          <h2 lang="zh-CN">里程碑</h2>
+          <h2 lang="en">Milestones</h2>
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content card hover-card">
-                <time>2025.09 - 至今</time>
-                <h3>从参与者到主导者</h3>
-                <p style="margin:0;">开启半身数字人视频生成的独立探索。从零开始搭建扩散模型架构，处理大规模视频数据集，逐步建立起独立设计实验、排查问题与优化模型的系统性科研能力。</p>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content card hover-card">
-                <time>2025.09</time>
-                <h3>大模型工程实践</h3>
-                <p style="margin:0;">参与华为昇思大模型创新训练营。带领团队跑通了从数据合成到 LoRA 微调、再到 Web 端部署的完整链路，将理论落地为实际应用，获得了工程能力的飞跃。</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content card hover-card">
-                <time>2025.03 - 2025.09</time>
-                <h3>科研初探与论文写作</h3>
-                <p style="margin:0;">参与属性可编辑说话头项目，在前辈指导下完成了大量对比与消融实验，学习并主导了学术论文的结构组织与撰写工作，完成了首篇 SCI 一区论文的投稿。</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content card hover-card">
-                <time>2025.03</time>
-                <h3>步入科研殿堂</h3>
-                <p style="margin:0;">加入苗启广教授组，正式进入数字人与多模态生成这一充满挑战的研究方向，开始系统学习扩散模型与音频驱动生成技术。</p>
+                <time>2025.09 - Present</time>
+                <h3 lang="zh-CN">从参与者到主导者</h3>
+                <h3 lang="en">From Participant to Leader</h3>
+                <p lang="zh-CN">开启半身数字人视频生成的独立探索。</p>
+                <p lang="en">Initiated independent exploration of half-body digital human video generation.</p>
               </div>
             </div>
           </div>
         </section>
-
-        <aside class="sidebar-section">
-          <div class="card bg-accent">
-            <h3>核心能力积淀</h3>
-            <ul class="skills-list">
-              <li>
-                <strong>算法与模型</strong>
-                <span>熟练掌握扩散模型训练、条件注入与交叉注意力机制设计。</span>
-              </li>
-              <li>
-                <strong>数据工程</strong>
-                <span>具备海量视频数据抓取、清洗、关键点提取及预处理经验。</span>
-              </li>
-              <li>
-                <strong>学术写作</strong>
-                <span>掌握高水平学术论文撰写、定性/定量分析与可视化图表设计。</span>
-              </li>
-              <li>
-                <strong>工程部署</strong>
-                <span>熟悉基于算力平台的大模型微调 (LoRA) 及前后端交互部署。</span>
-              </li>
-            </ul>
-          </div>
-        </aside>
       </div>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="current-year">2026</span> 杨佳豪</p>
+      <p>&copy; <span id="current-year">2026</span> <span lang="zh-CN">杨佳豪</span><span lang="en">Jiahao Yang</span> · Xidian University</p>
     </footer>
   </div>
 

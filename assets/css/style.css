@@ -20,7 +20,12 @@
 
 /* Language Switching */
 [lang="en"], [lang="en-US"] { display: none !important; }
-body.lang-en [lang="en"], body.lang-en [lang="en-US"] { display: initial !important; }
+body.lang-en [lang="en"], body.lang-en [lang="en-US"] { display: block !important; }
+body.lang-en span[lang="en"], 
+body.lang-en a[lang="en"], 
+body.lang-en strong[lang="en"], 
+body.lang-en em[lang="en"], 
+body.lang-en time[lang="en"] { display: inline-block !important; }
 body.lang-en [lang="zh-CN"] { display: none !important; }
 
 /* Global SVG defaults */

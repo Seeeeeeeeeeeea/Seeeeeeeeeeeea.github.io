@@ -4,95 +4,284 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="杨佳豪的个人主页">
-  <title>杨佳豪</title>
+  <title>杨佳豪 (Jiahao Yang) - 个人主页</title>
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    .markdown-body {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2.5rem;
-      background: var(--bg-card, #fff);
-      border-radius: var(--radius-lg, 12px);
-      box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.05));
+    :root {
+      --main-color: #2c3e50;
+      --link-color: #2980b9;
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --border-color: #e0e0e0;
     }
-    .markdown-body h1 {
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft Yahei", sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 30px;
+    }
+
+    /* Header Profile Section */
+    .profile-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      gap: 50px;
+    }
+
+    .profile-photo {
+      flex: 0 0 220px;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .profile-info {
+      flex: 1;
+      min-width: 300px;
+      padding-top: 10px;
+    }
+
+    .profile-info h1 {
+      margin-top: 0;
+      margin-bottom: 15px;
       font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--text-main, #24292e);
+      color: var(--main-color);
+      font-weight: 600;
     }
-    .markdown-body h2 {
-      font-size: 1.75rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      color: var(--text-main, #24292e);
-      border-bottom: 1px solid var(--border-color, #eaecef);
-      padding-bottom: 0.5rem;
+
+    .profile-info p {
+      margin: 6px 0;
+      font-size: 1.15rem;
     }
-    .markdown-body p {
-      margin-bottom: 1rem;
-      line-height: 1.8;
-      color: var(--text-muted, #586069);
-    }
-    .markdown-body ul {
-      margin-bottom: 1rem;
-      padding-left: 2rem;
-      color: var(--text-muted, #586069);
-    }
-    .markdown-body li {
-      margin-bottom: 0.5rem;
+
+    .contact-info {
+      margin-top: 25px;
+      font-family: Monaco, Consolas, "Courier New", monospace;
+      font-size: 1rem;
       line-height: 1.8;
     }
-    .markdown-body a {
-      color: var(--color-accent, #0366d6);
+    
+    .contact-info a {
+      color: var(--link-color);
       text-decoration: none;
     }
-    .markdown-body a:hover {
+
+    .contact-info a:hover {
       text-decoration: underline;
     }
+
+    /* Sections */
+    section {
+      margin-bottom: 45px;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      color: var(--main-color);
+      border-bottom: 2px solid #34495e;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      display: inline-block;
+      width: 100%;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+      color: var(--main-color);
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      font-size: 1.1rem;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* specific styling for lists */
+    .course-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .course-list li {
+      background: #f8f9fa;
+      padding: 12px 18px;
+      border-radius: 4px;
+      border-left: 4px solid var(--link-color);
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+    }
+
+    .course-list .score {
+      font-weight: bold;
+      color: var(--main-color);
+    }
+
+    .award-level {
+      color: #e74c3c;
+      font-weight: 600;
+    }
+
+    .highlight-text {
+      font-weight: 600;
+      color: #d35400;
+    }
+    
+    .nav-links {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+    
+    .nav-links a {
+      margin-right: 15px;
+      display: inline-block;
+      background: #f0f4f8;
+      padding: 6px 15px;
+      border-radius: 20px;
+      color: var(--link-color);
+      font-weight: 500;
+      border: 1px solid #dce4ec;
+    }
+    
+    .nav-links a:hover {
+      background: #e1e8ed;
+      text-decoration: none;
+    }
+
   </style>
 </head>
 <body>
-  <div class="page">
-    <main class="markdown-body">
-      <h1>杨佳豪</h1>
-      <p>我是杨佳豪，20 岁，河南南阳人，共青团员，现为西安电子科技大学 2023 级大数据管理与应用专业本科生。</p>
-      
-      <h2>联系方式</h2>
-      <ul>
-        <li>联系电话：19837724626</li>
-        <li>电子邮箱：jhyang2369@stu.xidian.edu.cn</li>
-      </ul>
+  <div class="container">
+    <header class="profile-header">
+      <div class="profile-photo">
+        <img src="assets/images/my_photo.png" alt="杨佳豪 (Jiahao Yang)">
+      </div>
+      <div class="profile-info">
+        <h1>杨佳豪 (Jiahao Yang)</h1>
+        <p><strong>本科生 (2023 - 2027)</strong></p>
+        <p>专业：大数据管理与应用</p>
+        <p>西安电子科技大学 (Xidian University)</p>
+        
+        <div class="contact-info">
+          <div><strong>Email:</strong> <a href="mailto:jhyang2369@stu.xidian.edu.cn">jhyang2369@stu.xidian.edu.cn</a></div>
+          <div><strong>Phone:</strong> 19837724626</div>
+          <div><strong>Github:</strong> <a href="https://github.com/Seeeeeeeeeeeea" target="_blank">Seeeeeeeeeeeea</a></div>
+        </div>
+        
+        <div class="nav-links">
+          <a href="index.html">主页 (Home)</a>
+          <a href="research.html">科研经历 (Research)</a>
+          <a href="journey.html">科研历程 (Journey)</a>
+        </div>
+      </div>
+    </header>
 
-      <h2>学业成绩</h2>
-      <p>在本科前五学期中，我的绩点排名为 3/42，GPA 为 3.9。英语四级成绩为 523 分，英语六级成绩为 542 分。</p>
-      <p>我曾获得以下荣誉：2024-2025 学年国家奖学金、2024-2025 学年校级优秀学生标兵（Top 1%）、2024-2025 学年钱永贵科技精英奖学金、2023-2024 学年国家励志奖学金</p>
-      <p>相关主干课程成绩如下：</p>
-      <ul>
-        <li>数据库原理：98</li>
-        <li>大数据技术基础：96</li>
-        <li>Python 程序设计：96</li>
-        <li>计算机网络：96</li>
-        <li>Java 程序设计：95</li>
-        <li>数据结构：94</li>
-        <li>数据挖掘与机器学习：94</li>
-        <li>离散数学基础：93</li>
-      </ul>
+    <main>
+      <section id="biography">
+        <h2>个人简介 (Biography)</h2>
+        <p>我是杨佳豪，20 岁，河南南阳人，共青团员。现为西安电子科技大学 2023 级大数据管理与应用专业本科生。</p>
+        <p>自 2025 年 5 月起，我在西安电子科技大学计算机科学与技术学院苗启广教授课题组进行科研实习，指导老师为李宇楠老师和冯冠文博士。我的研究方向主要集中在<strong>基于扩散模型的数字人生成</strong>。</p>
+      </section>
 
-      <h2>科研经历</h2>
-      <p>自 2025 年 5 月起，我在西安电子科技大学计算机科学与技术学院苗启广教授课题组进行科研实习，指导老师为李宇楠老师和冯冠文博士。我的研究方向是基于扩散模型的数字人生成。</p>
-      <p>更多科研项目信息可点击：<a href="#">这里</a>。</p>
+      <section id="education">
+        <h2>学业成绩 (Academic Performance)</h2>
+        <ul>
+          <li><strong>学业表现：</strong> 绩点排名 <span class="highlight-text">3/42</span>，GPA <span class="highlight-text">3.9</span></li>
+          <li><strong>外语能力：</strong> 英语四级 (CET-4) 523 分，英语六级 (CET-6) 542 分</li>
+        </ul>
+        
+        <h3>主干课程</h3>
+        <ul class="course-list">
+          <li><span>数据库原理</span> <span class="score">98</span></li>
+          <li><span>大数据技术基础</span> <span class="score">96</span></li>
+          <li><span>Python 程序设计</span> <span class="score">96</span></li>
+          <li><span>计算机网络</span> <span class="score">96</span></li>
+          <li><span>Java 程序设计</span> <span class="score">95</span></li>
+          <li><span>数据结构</span> <span class="score">94</span></li>
+          <li><span>数据挖掘与机器学习</span> <span class="score">94</span></li>
+          <li><span>离散数学基础</span> <span class="score">93</span></li>
+        </ul>
+      </section>
 
-      <h2>竞赛获奖</h2>
-      <p>本科阶段，我参加了一些竞赛，并获得以下奖项：</p>
-      <ul>
-        <li>国际大学生数学建模竞赛国际级二等奖</li>
-        <li>全国大学生数学建模竞赛省级二等奖</li>
-        <li>全国大学生数学竞赛省级二等奖</li>
-        <li>正大杯全国大学生市场调研竞赛省级二等奖</li>
-        <li>西安电子科技大学数学建模竞赛校级一等奖</li>
-        <li>西安电子科技大学星火杯校级一等奖<br>获奖项目：基于三维高斯泼溅高保真数字人研究及应用</li>
-      </ul>
+      <section id="research">
+        <h2>科研经历 (Research Experience)</h2>
+        <ul>
+          <li><strong>机构：</strong> 西安电子科技大学 计算机科学与技术学院</li>
+          <li><strong>课题组：</strong> 苗启广教授课题组科研实习 (2025.05 - 至今)</li>
+          <li><strong>指导老师：</strong> 李宇楠老师、冯冠文博士</li>
+          <li><strong>研究方向：</strong> 基于扩散模型的数字人生成</li>
+        </ul>
+        <p>💡 更多科研项目及成果信息，请点击：<a href="research.html">这里 (Research Page)</a>。</p>
+      </section>
+
+      <section id="awards">
+        <h2>荣誉与奖项 (Honors & Awards)</h2>
+        
+        <h3>综合荣誉</h3>
+        <ul>
+          <li>2024-2025 学年 <strong>国家奖学金</strong></li>
+          <li>2024-2025 学年 <strong>校级优秀学生标兵</strong> (Top 1%)</li>
+          <li>2024-2025 学年 <strong>钱永贵科技精英奖学金</strong></li>
+          <li>2023-2024 学年 <strong>国家励志奖学金</strong></li>
+        </ul>
+
+        <h3>竞赛获奖</h3>
+        <ul>
+          <li>国际大学生数学建模竞赛 <span class="award-level">国际级二等奖</span></li>
+          <li>全国大学生数学建模竞赛 <span class="award-level">省级二等奖</span></li>
+          <li>全国大学生数学竞赛 <span class="award-level">省级二等奖</span></li>
+          <li>正大杯全国大学生市场调研竞赛 <span class="award-level">省级二等奖</span></li>
+          <li>西安电子科技大学数学建模竞赛 <span class="award-level">校级一等奖</span></li>
+          <li>西安电子科技大学星火杯 <span class="award-level">校级一等奖</span> 
+            <br><span style="color:#666; font-size: 0.95em;">(获奖项目：基于三维高斯泼溅高保真数字人研究及应用)</span>
+          </li>
+        </ul>
+      </section>
     </main>
   </div>
 </body>

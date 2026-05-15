@@ -30,91 +30,86 @@
     <main>
       <section class="page-title">
         <h1>科研经历</h1>
-        <p>当前研究主要围绕音频驱动数字人、可控说话人视频生成与多模态生成模型展开。</p>
+        <p>探索数字人生成前沿技术，致力于构建高保真、可控且自然互动的多模态生成模型。</p>
       </section>
 
-      <section class="section">
+      <section class="section card">
         <h2>团队与指导</h2>
         <div class="entry">
           <div class="entry-head">
-            <h3>西安电子科技大学计算机科学与技术学院苗启广教授组</h3>
-            <span>2025 年 3 月至今</span>
+            <h3>西安电子科技大学计算机科学与技术学院 苗启广教授组</h3>
+            <span class="date">2025 年 3 月 至今</span>
           </div>
-          <p>指导老师：李宇楠老师，冯冠文博士。</p>
+          <p class="instructor" style="color: var(--color-muted);">指导老师：李宇楠 老师 / 冯冠文 博士</p>
+        </div>
+      </section>
+
+      <section class="section card">
+        <h2>研究方向</h2>
+        <div class="research-grid">
+          <div class="research-item">
+            <div class="icon-box">🎙️</div>
+            <h3>音频驱动视频生成</h3>
+            <p>关注音频条件、参考人像身份保持与面部动态生成之间的协同建模。</p>
+          </div>
+          <div class="research-item">
+            <div class="icon-box">🎭</div>
+            <h3>音频-姿态解耦控制</h3>
+            <p>探索语音动态、头部姿态、手势动作与身份外观之间的多条件解耦机制。</p>
+          </div>
+          <div class="research-item">
+            <div class="icon-box">🤖</div>
+            <h3>多模态与大模型</h3>
+            <p>关注生成式模型在数字媒体内容制作、智能问答与交互系统中的应用落地。</p>
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <h2>研究方向</h2>
-        <ul class="research-list">
-          <li>
-            <strong>音频驱动说话头视频生成：</strong>
-            关注音频条件、参考人像身份保持与面部动态生成之间的协同建模。
-          </li>
-          <li>
-            <strong>音频-姿态解耦控制：</strong>
-            探索语音动态、头部姿态、手势动作与身份外观之间的多条件解耦控制机制。
-          </li>
-          <li>
-            <strong>多模态生成与大模型应用：</strong>
-            关注生成式模型在数字媒体内容制作、智能问答与交互系统中的应用落地。
-          </li>
-        </ul>
-      </section>
+        <h2 style="margin-bottom: 1.5rem;">科研项目</h2>
 
-      <section class="section">
-        <h2>科研项目</h2>
-
-        <article class="entry">
+        <article class="entry card hover-card">
           <div class="entry-head">
             <h3>面部属性可编辑的说话头视频生成算法研究</h3>
-            <span>2025.03 - 2025.09</span>
+            <span class="date">2025.03 - 2025.09</span>
           </div>
-          <p class="muted">第四作者，中科院 SCI 一区在投</p>
-          <p>
-            该研究面向数字人形象个性化定制，构建属性可编辑的音频驱动说话头视频生成框架。
-            基于属性标注人脸数据训练语义潜空间线性分类器，将其权重建模为可解释的面部属性编辑方向；
-            推理时对参考人像语义潜变量进行属性方向调制，并作为语义引导条件参与视频去噪生成。
+          <p class="badge">中科院 SCI 一区在投 · 第四作者</p>
+          <p class="desc">
+            面向数字人形象个性化定制，构建属性可编辑的音频驱动说话头视频生成框架。基于属性标注人脸数据训练语义潜空间线性分类器，将其权重建模为可解释的面部属性编辑方向；推理时对参考人像语义潜变量进行属性方向调制，并作为语义引导条件参与视频去噪生成。
           </p>
-          <p>
-            <strong>个人贡献：</strong>
-            负责部分对比实验的实施，完成定性分析与可视化展示，组织并分析用户调研结果；主导论文撰写与投稿工作。
-          </p>
+          <div class="contribution">
+            <strong style="color: var(--color-accent);">核心贡献：</strong>负责对比实验实施、定性分析与可视化、用户调研分析；主导论文撰写与投稿。
+          </div>
         </article>
 
-        <article class="entry">
+        <article class="entry card hover-card">
           <div class="entry-head">
             <h3>音频-姿态解耦驱动的半身数字人视频生成算法研究</h3>
-            <span>2025.09 至今</span>
+            <span class="date">2025.09 - 至今</span>
           </div>
-          <p>
-            该研究面向数字媒体内容制作中的半身数字人视频生成场景。针对音频驱动面部动态时易受关键点条件干扰，
-            以及生成嘴部动态易受参考图像初始嘴部姿态牵制的问题，提出身份、语音动态与姿态动作的解耦控制机制。
-            方法以参考图像建模人物身份与外观特征，以音频条件驱动口型及面部表情动态，以稀疏关键点引导头部姿态与手势运动，
-            并通过条件丢弃以平衡多条件对生成的控制。
+          <p class="badge">独立研究项目</p>
+          <p class="desc">
+            针对音频驱动面部动态易受关键点条件干扰等问题，提出身份、语音动态与姿态动作的解耦控制机制。以参考图像建模身份外观，音频驱动口型表情，稀疏关键点引导头部与手势运动，通过条件丢弃平衡多条件控制。
           </p>
-          <p>
-            <strong>个人贡献：</strong>
-            独立开展该项目研究，完成说话人驱动条件设计、扩散模型架构搭建及掩码音频交叉注意力核心模块实现；
-            负责大规模头部/半身说话人视频数据的收集、清洗与预处理，搭建多阶段训练流程，并结合自定义数据增强与训练采样策略完成模型训练与调优；
-            设计并实施对比实验与消融实验，完成实验结果分析与可视化展示。
-          </p>
+          <div class="contribution">
+            <strong style="color: var(--color-accent);">核心贡献：</strong>独立设计驱动条件与扩散模型架构；负责大规模视频数据收集与预处理；搭建多阶段训练流程；实施对比与消融实验及结果分析。
+          </div>
         </article>
 
-        <article class="entry">
+        <article class="entry card hover-card">
           <div class="entry-head">
-            <h3>华为昇思大模型 2025 创新训练营（西北区）结营作品</h3>
-            <span>2025.09</span>
+            <h3>华为昇思大模型创新训练营结营项目</h3>
+            <span class="date">2025.09</span>
           </div>
-          <p>
-            在华为云昇腾算力平台上，面向校园新生问答场景对 Qwen2.5-7B 模型进行微调。
-            首先调用 DeepSeek-V3 API 合成数据集，随后采用 LoRA 参数高效微调方法完成模型训练，
-            最后基于 Gradio 搭建 Web 交互平台，实现从数据构建、模型微调到系统部署的完整闭环。
+          <p class="badge">优秀结营作品 · 团队负责人</p>
+          <p class="desc">
+            基于华为云昇腾算力，面向校园新生问答场景对 Qwen2.5-7B 进行 LoRA 微调。调用 DeepSeek-V3 API 合成数据集，完成模型训练，并基于 Gradio 搭建 Web 交互平台。
           </p>
-          <p><strong>个人贡献：</strong>担任主要负责人，统筹团队分工与主导项目全流程推进。</p>
+          <div class="contribution">
+            <strong style="color: var(--color-accent);">核心贡献：</strong>担任团队负责人，统筹项目分工，主导数据构建、微调训练到系统部署的全流程。
+          </div>
         </article>
       </section>
-
     </main>
 
     <footer class="site-footer">

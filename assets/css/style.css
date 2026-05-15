@@ -447,6 +447,7 @@ img {
 
   .profile-photo {
     width: 150px;
+    margin: 0 auto;
   }
 
   h1 {

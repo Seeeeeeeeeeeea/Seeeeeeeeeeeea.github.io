@@ -614,8 +614,8 @@ img {
 
 /* Journey Layout */
 .journey-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2.5rem;
 }
 
@@ -631,7 +631,7 @@ img {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, var(--color-border) 0%, var(--color-border) 90%, transparent 100%);
+  background: linear-gradient(to bottom, var(--color-accent-light) 0%, var(--color-border) 50%, transparent 100%);
 }
 
 .timeline-item {
@@ -654,20 +654,90 @@ img {
   border: 3px solid var(--color-paper);
   box-shadow: 0 0 0 3px var(--color-accent-light);
   z-index: 2;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-item:hover .timeline-marker {
+  background: var(--color-paper);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-accent-light), 0 0 12px rgba(59, 130, 246, 0.4);
+  transform: scale(1.2);
 }
 
 .timeline-content {
   padding: 1.5rem;
+  position: relative;
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  left: -0.5rem;
+  top: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-paper);
+  border-left: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: rotate(45deg);
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.timeline-item:hover .timeline-content::before {
+  border-color: #cbd5e1;
 }
 
 .timeline-content time {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: 600;
   color: var(--color-accent);
   margin-bottom: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  background: var(--color-accent-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.reflection-content {
+  position: relative;
+  padding: 1.5rem;
+  background: var(--color-soft);
+  border-radius: var(--radius-sm);
+  margin-top: 1rem;
+}
+
+.reflection-content::before {
+  content: '“';
+  position: absolute;
+  left: 0.5rem;
+  top: -1rem;
+  font-size: 4rem;
+  color: var(--color-border);
+  font-family: Georgia, serif;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.research-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.research-card-header h3 {
+  margin-bottom: 0;
+}
+
+.research-card-header svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-accent);
 }
 
 .timeline-content h3 {
